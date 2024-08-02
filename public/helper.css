@@ -1,0 +1,35 @@
+p {
+  font-size: 12px;
+}
+h1 {
+  font-size: 42px;
+}
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.f24 {
+  font-size: 16px;
+}
+.light-text {
+  font-weight: 300;
+}
+.bold-text {
+  font-weight: 600;
+}
+.low-price {
+  color: #f44336;
+}
+.high-price {
+  color: #00c853;
+}
+.ml-4 {
+  margin-left: 4px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-8 {
+  margin-bottom: -8px;
+}

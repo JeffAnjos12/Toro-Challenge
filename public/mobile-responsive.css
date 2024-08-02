@@ -1,0 +1,36 @@
+/*Responsividade para mobile*/
+@media (max-width: 450px) {
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+    font-size: 24px;
+  }
+  .grid-nav{
+    flex-direction: column;
+    margin-bottom: 10px;
+    .order-options{
+      flex-direction: column;
+      margin-bottom: 40px;
+      button{
+        flex-direction: row;
+      }
+    }
+  }
+  .order-options span {
+    margin-top: 32px;
+    margin-bottom: 17px;
+  }
+  .grid-graph{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .btn-row{
+    flex-direction: row;
+  }
+}

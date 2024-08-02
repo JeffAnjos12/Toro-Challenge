@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DIN Pro Medium', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+.logo-ELS {
+  width: 80px;
+}
+.logo img {
+  height: 20px;
+  margin-left: 20px;
+}
+
+.order-options {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.order-options span {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #8e918f;
+  display: flex;
+  align-items: center;
+}
+
+.button-switcher {
+  background-color: #ccc;
+  color: #8e918f;
+  border: none;
+  padding: 8px 30px;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.order-options button:hover {
+  background-color: #269aed;
+  color: white;
+  font-weight: 300;
+}
+
+.order-options button:active {
+  background-color: #269aed;
+  color: white;
+  font-weight: 300;
+}
+.button-switcher.active{
+  background-color: #269aed;
+  color: white;
+  font-weight: 300;
+}
+.grid-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 46px 46px 46px;
+}
+
+.grid-graph {
+  /* display: flex; */
+  gap: 30px;
+  /* align-items: center;
+  justify-content: space-between;
+  align-content: center; */
+  margin: 0px 46px 30px 46px;
+  .graph {
+    width: 296px;
+    height: 289px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+}
+
+.margin-content {
+  margin: 40px;
+}
+.side-to-side {
+  display: flex;
+  justify-content: space-between;
+}
+.img-graph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.img-border {
+  position: absolute;
+  left: 0;
+  bottom: 26px;
+  width: 100%;
+}
+
+ul {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+li {
+  margin: 5px 0;
+}

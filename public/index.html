@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toro Challenge</title>
+  <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="page-currencys.css">
+  <link rel="stylesheet" href="helper.css">
+  <link rel="stylesheet" href="mobile-responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="imgs/logo.svg" alt="Logo Toro">
+    </div>
+  </header>
+  <main>
+    <nav class="grid-nav">
+      <div>
+        <h1>Explore o mercado</h1>
+      </div>
+      <div class="order-options">
+        <span>Ordenar:</span>
+        <div class="btn-row">
+          <button onclick="filterCurrency('high')" id="order-asc" class="bold-text button-switcher active">Em Alta</button>
+          <button onclick="filterCurrency('loss')" id="order-desc" class="bold-text button-switcher active">Em baixa</button>
+        </div>
+      </div>
+    </nav>
+    <ul class="grid-graph" id="lista-ativos">
+      <li class="graph ativo profit-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/profit.svg" alt="loss" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li class="graph ativo loss-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="low-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/loss.svg" alt="" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li class="graph ativo profit-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/profit.svg" alt="high" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li class="graph ativo loss-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="low-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/loss.svg" alt="high" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+      </li>
+      </div>
+      <li class="graph ativo profit-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/profit.svg" alt="high" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li class="graph ativo profit-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/profit.svg" alt="" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li class="graph ativo loss-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="low-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/loss.svg" alt="" class="ml-4"></p>
+          <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+          <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+        </div>
+      </li>
+      <li id="IRBR3" class="graph ativo profit-price">
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="Eletropaulo" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">AES Eletropaulo</p>
+            <p class="light-text">ELP4</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ 36,32 <img src="imgs/profit.svg" alt="high" class="ml-4"></p>
+        </div>
+        <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+        <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+      </li>
+    </ul>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+  <script>
+      const socket = io("http://localhost:8081/");
+
+      socket.on('msg', (msg) => {
+          alert(msg);
+      });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const socket = new WebSocket('ws://localhost:8080/quotes');
+
+      socket.addEventListener('open', () => {
+        console.log('Conectado ao WebSocket');
+        socket.send('Hello Everybody');
+      });
+
+      socket.addEventListener('message', (event) => {
+        console.log('Mensagem recebida:', event.data);
+      });
+
+      socket.addEventListener('close', () => {
+        console.log('Desconectado do WebSocket');
+      });
+
+      socket.addEventListener('error', (error) => {
+        console.error('Erro no WebSocket:', error);
+      });
+    });
+  </script>
+ <script>
+  function updateStockPrices(data) {
+  console.log('Atualizando preços com os dados:', data);
+  for (const stock in data) {
+    const priceData = data[stock];
+    let listItem = document.getElementById(stock);
+
+    if (!listItem) {
+      listItem = document.createElement('li');
+      listItem.id = stock;
+      listItem.className = 'graph ativo profit-price';
+      
+      listItem.innerHTML = `
+        <div class="margin-content">
+          <img src="imgs/logo-eletropaulo.png" alt="${stock}" class="logo-ELS mb-8">
+          <div class="side-to-side mb-12">
+            <p class="light-text">Nome da Empresa</p>
+            <p class="light-text">${stock}</p>
+          </div>
+          <p class="bold-text mb-12">PREÇO DO ATIVO</p>
+          <p class="high-price f24 bold-text mb-12">R$ ${priceData.price.toFixed(2)} <img src="imgs/profit.svg" alt="high" class="ml-4"></p>
+        </div>
+        <img src="imgs/Borda do gráfico.svg" alt="" class="img-border">
+        <img src="imgs/Area do gráfico.svg" alt="" class="img-graph">
+      `;
+      
+      document.getElementById('graph-list').appendChild(listItem);
+    } else {
+      const priceElement = listItem.querySelector('.high-price');
+      if (priceElement) {
+        console.log(`Atualizando preço para ${stock}: R$ ${priceData.price.toFixed(2)}`);
+        priceElement.innerHTML = `R$ ${priceData.price.toFixed(2)} <img src="imgs/profit.svg" alt="high" class="ml-4">`;
+      } else {
+        console.error(`Elemento .high-price não encontrado para ${stock}`);
+      }
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>
