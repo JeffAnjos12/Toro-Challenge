@@ -22,8 +22,45 @@ header {
   padding: 20px;
 }
 
-.logo-ELS {
-  width: 80px;
+.logo-Ultra {
+  width: 65px;
+  position: relative;
+  right: 5px;
+}
+.logo-VALE{
+  width: 75px;
+  position: relative;
+  right: 10px;
+}
+.logo-AZUL{
+  width: 70px;
+  position: relative;
+  right: 10px;
+}
+.logo-PETRO{
+  width: 20px;
+}
+.logo-RUMO{
+  width: 130px;
+  position: relative;
+  right: 40px;
+  top: -8px;
+}
+.logo-BB{
+  width: 30px;
+  position: relative;
+  top: -8px;
+}
+.logo-GRD {
+  width: 55px;
+  position: relative;
+  right: 6px;
+  top: -8px;
+}
+.logo-MGL {
+  width: 95px;
+  position: relative;
+  top: -8px;
 }
 .logo img {
   height: 20px;
@@ -123,3 +160,9 @@ ul {
 li {
   margin: 5px 0;
 }
+
+
+
+
+
+

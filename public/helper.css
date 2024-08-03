@@ -18,10 +18,10 @@ li{
 .bold-text {
   font-weight: 600;
 }
-.low-price {
+.price-down {
   color: #f44336;
 }
-.high-price {
+.price-up {
   color: #00c853;
 }
 .ml-4 {
@@ -32,4 +32,13 @@ li{
 }
 .mb-8 {
   margin-bottom: -8px;
+}
+.mrb-8{
+  margin-bottom: 8px;
+}
+.mt-14{
+  margin-top: 14px;
+}
+.mtm-16{
+  margin-top: -16px;
 }
