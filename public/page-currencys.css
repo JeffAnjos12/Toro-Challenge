@@ -22,51 +22,62 @@ header {
   padding: 20px;
 }
 
+/* Logo Ações */
+
 .logo-Ultra {
   width: 65px;
   position: relative;
   right: 5px;
 }
+
 .logo-VALE{
   width: 75px;
   position: relative;
   right: 10px;
 }
+
 .logo-AZUL{
   width: 70px;
   position: relative;
   right: 10px;
 }
+
 .logo-PETRO{
   width: 20px;
 }
+
 .logo-RUMO{
   width: 130px;
   position: relative;
   right: 40px;
   top: -8px;
 }
+
 .logo-BB{
   width: 30px;
   position: relative;
   top: -8px;
 }
+
 .logo-GRD {
   width: 55px;
   position: relative;
   right: 6px;
   top: -8px;
 }
+
 .logo-MGL {
   width: 95px;
   position: relative;
   top: -8px;
 }
+
 .logo img {
   height: 20px;
   margin-left: 20px;
 }
 
+/* Estilo/alinhamento dos botões */
 .order-options {
   display: flex;
   justify-content: end;
@@ -110,18 +121,18 @@ header {
   color: white;
   font-weight: 300;
 }
+
+/* Primeiro Navigation */
+
 .grid-nav {
   display: flex;
   justify-content: space-between;
   margin: 42px 46px 46px 46px;
 }
+/* Card de Ação */
 
 .grid-graph {
-  /* display: flex; */
   gap: 30px;
-  /* align-items: center;
-  justify-content: space-between;
-  align-content: center; */
   margin: 0px 46px 30px 46px;
   .graph {
     width: 296px;
@@ -151,15 +162,8 @@ header {
   width: 100%;
 }
 
-ul {
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; 
-}
 
-li {
-  margin: 5px 0;
-}
+
 
 
 

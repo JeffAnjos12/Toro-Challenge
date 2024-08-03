@@ -1,6 +1,3 @@
-//Iteração de preço
-
-
 //Seleção da lista de loss/profit
 
 function filterCurrency(tipo) {
@@ -61,31 +58,25 @@ document.addEventListener('click', () => {
 //Comunicação da API com o sistema
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Conectar ao WebSocket na porta 8080
   const socket = new WebSocket('ws://localhost:8080/quotes');
 
-  // Evento de conexão
   socket.addEventListener('open', () => {
     console.log('Conectado ao WebSocket');
     socket.send('Hello Everybody');
   });
 
-  // Evento de mensagem
   socket.addEventListener('message', (event) => {
     console.log('Mensagem recebida:', event.data);
-    const jsonData = JSON.parse(event.data); // Parse o JSON recebido
+    const jsonData = JSON.parse(event.data);
     console.log('JSON Data:', jsonData);
     
-    // Atualizar os preços das ações no DOM
     updateStockPrices(jsonData);
   });
 
-  // Evento de desconexão
   socket.addEventListener('close', () => {
     console.log('Desconectado do WebSocket');
   });
 
-  // Evento de erro
   socket.addEventListener('error', (error) => {
     console.error('Erro no WebSocket:', error);
   });
@@ -98,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (listItem) {
         const priceElement = listItem.querySelector('.only-price');
 
-        // Obter o preço anterior
         const oldPriceText = priceElement.textContent.match(/R\$ ([\d,]+)/);
         const oldPrice = oldPriceText ? parseFloat(oldPriceText[1].replace(',', '.')) : null;
 
@@ -126,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
           priceElement.classList.remove('price-up', 'price-down');
         }
 
-        // Atualizar o conteúdo do elemento de preço
         priceElement.innerHTML = `R$ ${newPrice} ${arrow}`;
       } else {
         console.warn(`Item de lista com ID ${stock} não encontrado`);
