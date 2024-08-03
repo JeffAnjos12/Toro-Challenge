@@ -6,5 +6,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: 'https://jeffanjos12.github.io/Toro-Challenge/',
+    testIsolation:false,
   },
 });
