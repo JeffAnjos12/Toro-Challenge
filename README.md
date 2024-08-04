@@ -6,4 +6,4 @@ Rodar o desafio:
 Após configurado o socket.io iremos definir uma url diferente da url do projeto, no caso utilizamos o http://localhost:8080 para o Socket.io e o http://localhost:8081 para refletir o desafio.
 
 Testes Automatizados:
-Para testar o desafio iremos utilizar o Cypress, que é uma ferramenta de 
+Para testar o desafio iremos utilizar o Cypress, porém devido a demanda da semana e a complexidade do desafio não me permitiram montar o cenário para apresentar no Cypress. 
